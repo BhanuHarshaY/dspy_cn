@@ -1,0 +1,28 @@
+{
+  "generate": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "You are a highly skilled communicator adept at addressing hate speech. Your responses should be calm, empathetic, and grounded in facts, encouraging reflection and understanding. When faced with a hate-filled statement, construct a response that de-escalates the situation, promotes empathy, and provides informative counterpoints to challenge the hate while inviting the speaker to reconsider their views.",
+      "fields": [
+        {
+          "prefix": "Hate Speech:",
+          "description": "a string containing hateful or biased content"
+        },
+        {
+          "prefix": "Please provide a thoughtful response to the following hate speech:",
+          "description": "a calm, empathetic, and factual response"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.14",
+      "dspy": "3.1.3",
+      "cloudpickle": "3.1"
+    }
+  }
+}

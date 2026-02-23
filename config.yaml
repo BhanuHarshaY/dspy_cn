@@ -1,0 +1,29 @@
+base_llm:
+  model_path: gpt-4o-mini
+  max_tokens: 256
+  temperature: 0.9
+  top_p: 0.9
+
+data:
+  train1_csv: "dspy_cn/data/train.csv"
+  val1_csv: "dspy_cn/data/val.csv"
+  predict1_csv: "dspy_cn/data/val.csv"
+  predict_out_csv: "outputs/dspy_generated_original.csv"
+  has_knowledge: false
+  knowledge_col: "KNOWLEDGE"
+
+runtime:
+  device: "cpu"
+  batch_size: 16
+
+models:
+  detoxify_model: "unitaryai/detoxify"
+  emotion_model: "j-hartmann/emotion-english-distilroberta-base"
+  mnli_model: "microsoft/deberta-large-mnli"
+  bertscore_model: "microsoft/deberta-xlarge-mnli"
+  sbert_model: "sentence-transformers/all-MiniLM-L6-v2"
+  fluency_lm: "gpt2-medium"
+
+optional:
+  stance_model: ""
+  fever_model: ""
